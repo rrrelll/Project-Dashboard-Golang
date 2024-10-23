@@ -1,0 +1,47 @@
+.profile-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e; /* Warna latar belakang utama */
+    color: white; /* Warna teks */
+  }
+  
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .chart-card {
+    width: 45%;
+    min-width: 300px; 
+    height: 400px; /* Menambahkan tinggi untuk memperbesar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+  }
+  
+  .chart-card canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  @media (max-width: 800px) {
+    .chart-container {
+      flex-direction: column;
+    }
+  
+    .chart-card {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  
